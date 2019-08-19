@@ -27,7 +27,7 @@
 #outer-dropzone {
   width: 50%;
   height: 600px;
-  background-image: url(/assets/images/potato1.jpg);
+  background-image: url(../images/potato1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-color: aliceblue;
