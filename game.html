@@ -28,22 +28,27 @@
         </div> 
     </nav>
     <div class="container">
+
         <h3>Game Page</h3>
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn btn-sm btn-dark d-block float-right ml-2" id="save">Save</button>
+                    </div>
+                </div>
+        </div>
         <div id="no-drop" class="gallery">
-            <!-- <div id="buttons" class=" text-center mb-3">
-                <button>button1</button>
-                <button>button2</button>
-                <button>button3</button>
-                <button>button4</button>
-            </div> -->
+
             <div id="yes-drop" class="galleryItem img-thumbnail drag-drop draggable"> <img src="assets/images/eye-clipart-36.png" width= 100px alt="" srcset=""> </div>
             <div class="galleryItem img-thumbnail drag-drop draggable"> <img src="assets/images/images-of-nose-26.png" width= 100px alt="" srcset=""> </div>
             <div class="galleryItem img-thumbnail drag-drop draggable"> <img src="assets/images/mouth-clipart-35.png" width= 150px alt="" srcset=""> </div>
         </div>
-        <div id="outer-dropzone" class="dropzone"></div>
+        <div id="outer-dropzone" class="dropzone">
+            
+        </div>
     </div>
-
     <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script type= "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
     <script src="assets/javascript/script.js"></script>
     
 </body>
