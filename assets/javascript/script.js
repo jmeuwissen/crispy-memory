@@ -20,22 +20,21 @@ interact('.draggable').draggable({
       console.log(event);
   }
 }).on('move', function (event) {
-let interaction = event.interaction;
-if (interaction.pointerIsDown && !interaction.interacting() && event.currentTarget.getAttribute('clonable') != 'false') {
-let dropZone = document.querySelector("#outer-dropzone");
-let original = event.currentTarget;
-let clone = event.currentTarget.cloneNode(true);
-let x = clone.offsetLeft;
-let y = clone.offsetTop;
-clone.setAttribute('clonable','false');
-clone.style.position = "absolute";
-clone.style.left = original.offsetLeft+"px";
-clone.style.top = original.offsetTop+"px";  
-original.parentElement.appendChild(clone);
-dropZone.appendChild(clone);
-interaction.start({ name: 'drag' },event.interactable,clone);
-}
-});
+      let interaction = event.interaction;
+      if (interaction.pointerIsDown && !interaction.interacting() && event.currentTarget.getAttribute('clonable') != 'false') {
+      let dropZone = document.querySelector("#outer-dropzone");
+      let original = event.currentTarget;
+      let clone = event.currentTarget.cloneNode(true);
+      let x = clone.offsetLeft;
+      let y = clone.offsetTop;
+      clone.setAttribute('clonable','false');
+      clone.style.position = "absolute";
+      clone.style.left = original.offsetLeft+"px";
+      clone.style.top = original.offsetTop+"px";  
+      original.parentElement.appendChild(clone);
+      dropZone.appendChild(clone);
+      interaction.start({ name: 'drag' },event.interactable,clone);
+}});
 
 
 // html2canvas eventlistener on save button
@@ -46,3 +45,6 @@ document.getElementById("save").addEventListener("click", function(event){
       document.body.appendChild(canvas); 
   })
 })
+
+
+
