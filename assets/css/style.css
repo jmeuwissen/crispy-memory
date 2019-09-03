@@ -22,16 +22,17 @@
 }
 
 
-/* //++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++ */
 
 #outer-dropzone {
   width: 50%;
   height: 600px;
-  background-image: url(../images/potato1.jpg);
+  background-image: url(../images/new_potato.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-color: aliceblue;
   border: 5px solid aliceblue;
+  background-size: contain
 }
 
 .dropzone {
