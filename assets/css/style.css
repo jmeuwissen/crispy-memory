@@ -2,6 +2,28 @@
   box-sizing: border-box;
 }
 
+.body {
+  background: url(https://images.unsplash.com/photo-1565465936242-ba86f53921ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80);
+  background-size: cover;
+  background-position: center; 
+  transition: background 1.5s linear;
+  -webkit-backface-visibility: hidden;
+  webkit-transition: background-image 1.5s linear;
+  -webkit-transform:translate3d(0,0,0);
+}
+  
+
+h1.title.has-text-centered{
+  font-family: 'billabong';
+  font-size: 3em;
+}
+
+
+@font-face {
+  font-family: 'billabong';
+  src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix") format('embedded-opentype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff") format('woff'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf") format('truetype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular") format('svg'); 
+}
+
 .gallery {
   width: 50%;
   float: right;
@@ -19,6 +41,19 @@
 .img-thumbnail {
   background-color: transparent;
   border: transparent;
+}
+
+.hero {
+  background-color: tan;
+  padding: 1rem;
+}
+
+footer {
+  opacity: 0.8;
+}
+
+.footer {
+  padding: 2.5rem 1rem;
 }
 
 
