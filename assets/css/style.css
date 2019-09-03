@@ -79,3 +79,11 @@ footer {
   transition: background-color 0.3s;
   float: left;
 }
+
+
+
+.block-header {
+  color: rebeccapurple;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+}
