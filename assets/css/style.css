@@ -60,6 +60,11 @@ footer {
   border: transparent;
 }
 
+a.navbar-brand.text-dark {
+  font-family: 'billabong';
+  font-size: 2em;
+}
+
 
 /* ++++++++++++++++++++++++++++++++++ */
 
