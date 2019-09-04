@@ -177,6 +177,7 @@ window.onload = function(){
 
   const GoogleObj = {
 
+    IntervalFunc : {},
     AccessToken : {},
     UploadToken: {},
     FileToUpload: {},    
@@ -379,9 +380,10 @@ window.onload = function(){
           console.log("album was not added to db!");      
         });       
         
-        setInterval( function () {
+        clearTimeout(GoogleObj.IntervalFunc);
+        GoogleObj.IntervalFunc  = setInterval( function () {
           GoogleObj.searchAlbum(GoogleObj.AlbumId);          
-        }, 3000);
+        }, 5000);
         
     });
   });
