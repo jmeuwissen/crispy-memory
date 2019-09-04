@@ -87,3 +87,20 @@ footer {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
 }
+
+
+/* Media quiries */
+@media ( max-width: 600px){
+  h1.title.has-text-centered{
+    font-size: 2em;
+  }
+
+  .hero {
+    padding: .3rem;
+  }
+
+  .footer {
+    padding: 2rem 1rem;
+  }
+  
+}
