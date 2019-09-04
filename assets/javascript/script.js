@@ -1,10 +1,10 @@
 interact('.draggable').draggable({
   inertia: true,
-  restrict: {
-    restriction: "parent",
-    endOnly: true,
-    elementRect: { top: 0, left: 4, bottom: 1, right: 1 }
-  },
+  // restrict: {
+  //   restriction: "parent",
+  //   endOnly: true,
+  //   elementRect: { top: 0, left: 4, bottom: 1, right: 1 }
+  // },
   onmove: function (event) {
     let target = event.target;   
     let x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
