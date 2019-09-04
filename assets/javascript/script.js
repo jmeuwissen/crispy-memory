@@ -36,15 +36,13 @@ interact('.draggable').draggable({
       interaction.start({ name: 'drag' },event.interactable,clone);
 }});
 
-
-// html2canvas eventlistener on save button
-let captureZone = document.querySelector("#outer-dropzone");
-document.getElementById("save").addEventListener("click", function(event){
-  event.preventDefault();
-  html2canvas(captureZone).then(function(canvas) {
-      document.body.appendChild(canvas); 
-  })
-})
-
+// // html2canvas eventlistener on save button
+// let captureZone = document.querySelector("#outer-dropzone");
+// document.getElementById("save").addEventListener("click", function(event){
+//   event.preventDefault();
+//   html2canvas(captureZone).then(function(canvas) {
+//       document.body.appendChild(canvas); 
+//   });
+// });
 
 
